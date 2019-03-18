@@ -1,0 +1,3 @@
+<!--pages/meal-calorie/meal-calorie.wxml-->
+<text>{{meal}}</text>
+<button bindtap="usecamara">+</button>

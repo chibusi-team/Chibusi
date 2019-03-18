@@ -1,0 +1,35 @@
+<!--pages/input_info/input_info.wxml-->
+<view class="container">
+  <view >
+    <text>身高</text>
+    <view class="section">
+      <input type="digit" placeholder="。。。"/>
+    </view>
+  </view>
+  <view>
+    <text>体重</text>
+    <view class="section">
+      <input type="digit" placeholder="。。。"/>
+    </view>
+  </view>
+  <view>
+    <text>年龄</text>
+    <view class="section">
+      <input type="digit" placeholder="。。。"/>
+    </view>
+  </view>
+  <view>
+    <text>运动量</text>
+    <view class="section">
+      <input type="digit" placeholder="。。。"/>
+    </view>
+  </view>
+  <view>
+    <text>期望目标</text>
+    <view class="section">
+      <input type="digit" placeholder="。。。"/>
+    </view>
+  </view>
+  
+</view>
+<button class="in_button" bindtap="bindViewTap">打造你的个人健康助手</button>

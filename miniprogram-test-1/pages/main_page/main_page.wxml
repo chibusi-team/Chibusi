@@ -1,0 +1,8 @@
+<!--pages/main_page/main_page.wxml-->
+<text>你每天需要摄入</text><text>{{option.kaluli}}大卡</text>
+
+
+<progress class="progress" percent="{{percent}}" show-info="{{isSi}}" stroke-width="{{sw}}" activeColor="{{pc}}" backgroundColor="{{pbc}}" active="{{isActive}}" active-mode="forwards">
+</progress>
+
+<button bindtap="tocalculate">转到计算器</button>
