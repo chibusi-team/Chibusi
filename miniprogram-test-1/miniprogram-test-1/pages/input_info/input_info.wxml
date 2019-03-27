@@ -1,0 +1,28 @@
+<!--pages/input_info/input_info.wxml-->
+<form bindsubmit='formSubmit' >
+  <view class="container2">
+    <view class="section1">
+      <text class = "textview">
+      体重</text>
+      <input type="number" name = "weight" placeholder="-- kg"/>
+    </view>
+    <view class="section">
+      <text class = "textview">
+      身高</text>
+      <input type="number" name = "height" placeholder="-- cm"/>
+    </view>
+    <view class = "gap"></view>
+    <view class="section">
+      <text class = "textview">饮食</text>
+    </view>
+    <view class = "gap"></view>
+    <view class="section">
+      <text class = "textview">运动</text>
+    </view>
+  </view>
+  <view class="btn-area">
+      <button formType="submit">提交</button>
+  </view>
+</form>
+<view class = "container2"></view>
+<!-- <button class="in_button" bindtap="bindViewTap">打造你的个人健康助手</button> -->

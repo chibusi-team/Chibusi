@@ -1,0 +1,125 @@
+/* pages/main/main.wxss */
+.container{
+  position: absolute;
+  top: 0;
+  width:100%;
+  height: 100%;
+  background-color: whitesmoke;
+}
+.top{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height:30%;
+  background-color: #F8F8F8;
+}
+.today{
+  position: absolute;
+  top:5%;
+  left:5%;
+  font-size: 15px;
+  font-family: "华文细黑";
+  font-weight: bolder;
+}
+.today_caluli{
+  position: absolute;
+  top:30%;
+  left:22%;
+  font-size: 35px;
+  font-family: "华文细黑";
+  font-weight: bolder;
+}
+.daily_caluli{
+  position: absolute;
+  top: 39%;
+  left:45%;
+  font-size: 20px;
+  color: gray;
+  font-family: "华文细黑";
+}
+.white_bar{
+  position:absolute;
+  top:66%;
+  left:10%;
+  width:80%;
+  background-color: white;
+  border:solid gainsboro 1px;
+  height:10%;
+}
+.blue_bar{
+  position:absolute;
+  top:0;
+  left:0;
+  background-color: #87CEEB;
+  border:solid gainsboro 1px;
+  height:100%;
+}
+.lable{
+  position: absolute;
+  top:77%;
+  width:15%;
+  background-color: #F8F8F8;
+  height:20%;
+}
+.propotion{
+  position: absolute;
+  top:30%;
+  width:100%;
+  height:20%;
+}
+.propotion2{
+  position: absolute;
+  top:50%;
+  width:100%;
+  height:5%;
+}
+.bottom{
+  position: absolute;
+  width:100%;
+  height:45%;
+  background-color: white;
+  top:55%;
+}
+.calculate{
+  font-size: 13px;
+  font-family: "华文细黑";
+  top:3%;
+  left:8%;
+  position: absolute;
+}
+.meal{
+  position: absolute;
+  top:20%;
+  width:30%;
+  height:40%;
+  border-radius: 50%;
+}
+.meal_font{
+  position: absolute;
+  top:32%;
+  left:26%;
+  font-size: 22px;
+  color:white;
+}
+.ca_font{
+  position: absolute;
+  top:58%;
+  font-size: 13px;
+  left:37%;
+  color:white;
+}
+.fork{
+  position: absolute;
+  top:20%;
+  width:7%;
+  height:9%;
+  border-radius: 50%;
+  background-color: black;
+}
+.forks{
+  position: absolute;
+  width:90%;
+  height: 90%;
+  top:5%;
+  left:5%;
+}

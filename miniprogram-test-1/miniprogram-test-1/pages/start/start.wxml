@@ -1,0 +1,89 @@
+<!--pages/start/start.wxml-->
+<view class = container>
+  <image class = "top_img" src = "../img/test.png" />
+  <view class = "body">
+    <view class = "container2">
+    <text class = "nick_name">{{userInfo.nickName}}</text>
+    <image class = "pencil" src = '../img/pencil.png'></image>
+    <view class="divLine"></view>
+    <text class = "basic_info">基本信息</text>
+    <view class = "basic_box">
+      <view class = "sex">
+        <picker bindchange="bindPickerChange" value="{{sex_index}}" range="{{sex_array}}">
+        <view class="picker">
+          {{sex_array[sex_index]}}
+        </view>
+      </picker>
+      </view>
+      <view class = "age" >
+        <picker
+        mode="date"
+        value="{{date}}"
+        start="1980-01-01"
+        end="2019-03-26"
+        bindchange="bindDateChange"
+        >
+        <view class="picker1">
+          {{date}}
+        </view>
+        </picker>
+      </view>
+      <view class = "height">
+        <picker bindchange="bindPickerChangeHeight" value="{{height_index}}" range="{{height_array}}">
+          <view class = "picker1">
+          {{height_array[height_index]}}cm
+          </view>
+        </picker>
+      </view>
+      <view class = "weight">
+        <picker bindchange="bindPickerChangeWeight" value="{{weight_index}}" range="{{weight_array}}">
+          <view class = "picker1">
+          {{weight_array[weight_index]}}kg
+          </view>
+        </picker>
+      </view>
+    </view>
+    <view class="divLine2"></view>
+    <text class = "sports_info">运动强度</text>
+    <view class = "action-box">
+      <view class = "action1" bindtap='Select1' style="background-color:{{action1BackgroundColor}}">
+        <image class = "sports_img" src= "../img/sit.png"></image>
+      </view>
+      <view class = "action2" bindtap='Select2' style="background-color:{{action2BackgroundColor}}">
+        <image class = "sports_img" src= "../img/run1.png"></image>
+      </view>
+      <view class = "action3" bindtap='Select3' style="background-color:{{action3BackgroundColor}}">
+        <image class = "sports_img" src= "../img/rop.png"></image>
+      </view>
+      <view class = "action4" bindtap='Select4' style="background-color:{{action4BackgroundColor}}">
+        <image class = "sports_img" src= "../img/run.png"></image>
+      </view>
+    </view>
+    <text class = "sports_info2">{{exercise}}</text>
+    <text class = "training_info">健身计划</text>
+    <view class="divLine3"></view>
+    <view class = "goal">
+      <picker  bindchange="bindPickerChangeGoal" value="{{goal_index}}" range="{{goal_array}}">
+        <view class="picker1">
+          {{goal_array[goal_index]}}
+        </view>
+      </picker>
+    </view>
+    <view class = "goal_num">
+      <picker  bindchange="bindPickerChangeGoalNum" value="{{goal_num_index}}" range="{{goal_num_array}}">
+        <view class="picker1">
+          {{goal_num_array[goal_num_index]}}kg
+        </view>
+      </picker>
+    </view>
+      <view class = "goal_day">
+      <picker  bindchange="bindPickerChangeGoalDay" value="{{goal_day_index}}" range="{{goal_day_array}}">
+        <view class="picker1">
+          {{goal_day_array[goal_day_index]}}天
+        </view>
+      </picker>
+    </view>
+    <button class="in_button" bindtap="bindViewTap">查看你的每日卡路里</button>
+    </view>
+  </view>
+</view>

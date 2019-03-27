@@ -1,0 +1,41 @@
+<!--pages/main/main.wxml-->
+<view class = "container">
+  <view class = "top">
+    <text class = "today">今日卡路里</text>
+    <text class = "today_caluli" style = "color:{{today_color}};">{{today_caluli}}</text>
+    <text class = "daily_caluli">/{{daily_caluli}}千卡</text>
+    <view class = "white_bar"></view>
+    <text class = "daily_caluli">/{{daily_caluli}}千卡</text>
+    <view class = "white_bar">
+      <view class = "blue_bar" style = "width:{{percent*100}}%"></view>
+    </view>
+    <view class = "lable" style = "left:{{(today_caluli/daily_caluli)*100-5}}%">
+    </view>
+  </view>
+  <image class = "propotion" src = "../img/propotion.png"></image>
+  <image class = "propotion2" src = "../img/propotion2.png"></image>
+  <view class = "bottom">
+    <text class = "calculate">智能卡路里计算器</text>
+    <view class = "meal" style = "left:3%;background-color:{{breakfast_color}}" bindtap="caloriecal1">
+      <text class = "meal_font" style = "color:{{breakfast_font}}">{{breakfast}}</text>
+      <text class = "ca_font" style = "color:{{breakfast_font}}">千卡</text>
+    </view>
+    <view class = "meal" style = "left:35%;background-color:{{lunch_color}}" bindtap="caloriecal2">
+      <text class = "meal_font" style = "color:{{lunch_font}}">{{lunch}}</text>
+      <text class = "ca_font" style = "color:{{lunch_font}}">千卡</text>
+    </view>
+    <view class = "meal" style = "left:67%;background-color:{{dinner_color}}" bindtap="caloriecal3">
+      <text class = "meal_font" style="color:{{dinner_font}};">{{dinner}}</text>
+      <text class = "ca_font" style = "color:{{dinner_font}}">千卡</text>
+    </view>
+    <view class = "fork" style='left:25%'>
+     <image class = "forks" src="../img/fork.png"></image>
+    </view>
+    <view class = "fork"style='left:57%'>
+     <image class = "forks" src="../img/fork.png"></image>
+    </view>
+    <view class = "fork"style='left:89%'>
+     <image class = "forks" src="../img/fork.png"></image>
+    </view>
+  </view>
+</view>

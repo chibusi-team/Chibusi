@@ -1,0 +1,269 @@
+/* pages/start/start.wxss */
+.container{
+  height:100%;
+  width:100%;
+  background-color: whitesmoke
+}
+.top_img{
+  height: 193px;
+  width: 100%;
+  top:0px;
+  position: absolute
+}
+.body{
+  height: 550px;
+  top:157px;
+  width: 96%;
+  left:2%;
+  position: absolute;
+  background-color:white;
+  border-radius: 10px;
+  border:solid gainsboro 1px;
+}
+.nick_name{
+  left:20px;
+  position: relative;
+  top:18px;
+  font-size: 16px;
+  font-family: "微软雅黑"
+}
+.pencil{
+  left:30%;
+  top:2%;
+  position: absolute;
+  width:6%;
+  height:5%;
+}
+.basic_info{
+  position: absolute;
+  left:41px;
+  top:80px;
+  font-size: 12px;
+  color:gray;
+  font-family: "微软雅黑"
+}
+.divLine{
+ background: #E0E3DA;
+ width: 185px;
+ height: 7rpx;
+ top:88px;
+ position: absolute;
+ left:100px;
+}
+.basic_box{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+  height:50%;
+}
+.sex{
+  position: absolute;
+  left: 40px;
+  top:120px;
+  width:100px;
+  height: 40px;
+  border:solid gainsboro 1px;
+  font-size:12px;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+}
+.age{
+  position: absolute;
+  left: 160px;
+  top:120px;
+  width:100px;
+  height: 40px;
+  border:solid gainsboro 1px;
+  font-size:12px;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+}
+.weight{
+  position: absolute;
+  left: 160px;
+  top:180px;
+  width:100px;
+  height: 40px;
+  border:solid gainsboro 1px;
+  font-size:12px;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+}
+.height{
+  position: absolute;
+  left: 40px;
+  top:180px;
+  width:100px;
+  height: 40px;
+  border:solid gainsboro 1px;
+  font-size:12px;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+}
+.sports_info{
+  position: absolute;
+  left:41px;
+  top:260px;
+  font-size: 12px;
+  color:gray;
+  font-family: "微软雅黑"
+}
+.divLine2{
+ background: #E0E3DA;
+ width: 185px;
+ height: 7rpx;
+ top:268px;
+ position: absolute;
+ left:100px;
+}
+.action-box{
+  position: absolute;
+  top:300px;
+  width:100%;
+  height:60px;
+  background-color: white;
+}
+.action1{
+  position: absolute;
+  width:57px;
+  height:57px;
+  left:40px;
+  background-color: white;
+  border-radius: 50%;
+  border:solid gainsboro 1px;
+}
+.action2{
+  position: absolute;
+  width:57px;
+  height:57px;
+  left:105px;
+  background-color: white;
+  border-radius: 50%;
+  border:solid gainsboro 1px;
+}
+.action3{
+  position: absolute;
+  width:57px;
+  height:57px;
+  left:172px;
+  background-color: white;
+  border-radius: 50%;
+  border:solid gainsboro 1px;
+}
+.action4{
+  position: absolute;
+  width:57px;
+  height:57px;
+  left:240px;
+  background-color:white;
+  border-radius: 50%;
+  border:solid gainsboro 1px;
+}
+.sports_img{
+  position: absolute;
+  top:2px;
+  width:50px;
+  height:50px;
+  left:2px;
+}
+.sports_info2{
+  position: absolute;
+  left:40%;
+  top:380px;
+  font-size: 13px;
+  color:gray;
+  font-family: "微软雅黑"
+}
+.in_button{
+  position: absolute;
+  top:92%;
+  width:60%;
+  left:68px;
+  height: 6%;
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+  background-color: #87CEEB;
+  color:gray;
+  font-family: "微软雅黑"
+}
+.picker{
+  position: absolute;
+  height:100%;
+  width:100%;
+  left: 45%;
+  top: 30%;
+}
+.picker1{
+  position: absolute;
+  height:100%;
+  width:100%;
+  left:17%;
+  top:30%;
+}
+.training_info{
+  position: absolute;
+  left:41px;
+  top:410px;
+  font-size: 12px;
+  color:gray;
+  font-family: "微软雅黑"
+}
+.divLine3{
+ background: #E0E3DA;
+ width: 185px;
+ height: 7rpx;
+ top:418px;
+ position: absolute;
+ left:100px;
+}
+.goal{
+  position: absolute;
+  left: 10%;
+  top:440px;
+  width:25%;
+  height: 40px;
+  border:solid gainsboro 1px;
+  font-size:12px;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+}
+.goal_num{
+  position: absolute;
+  left: 36%;
+  top:440px;
+  width:25%;
+  height: 40px;
+  border:solid gainsboro 1px;
+  font-size:12px;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+}
+.goal_day{
+  position: absolute;
+  left: 62%;
+  top:440px;
+  width:25%;
+  height: 40px;
+  border:solid gainsboro 1px;
+  font-size:12px;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+}
+.container2{
+  position: absolute;
+  left:5%;
+  top:0;
+  background-color: white;
+  width:94%;
+  height: 100%;
+  border-radius: 10px;
+}

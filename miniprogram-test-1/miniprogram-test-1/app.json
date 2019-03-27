@@ -1,0 +1,21 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/main/main", 
+    "pages/start/start",
+    "pages/input_info/input_info",
+    "pages/logs/logs",
+    "pages/calculate/calculate",
+    "pages/main_page/main_page",
+    "pages/photo/photo",
+    "pages/calorie-calculate/calorie-calculate",
+    "pages/meal-calorie/meal-calorie",
+    "pages/basic_info/basic_info"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#87CEEB",
+    "navigationBarTitleText": "吃不死",
+    "navigationBarTextStyle": "black"
+  }
+}

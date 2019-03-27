@@ -1,0 +1,77 @@
+<!--pages/meal-calorie/meal-calorie.wxml-->
+<button bindtap="usecamara">拍照识别卡路里</button>
+
+<view >
+  <block wx:for="{{hadfood}}" wx:for-item="item" wx:key="property" class='section2'>
+    <view><text class='name'> {{item.food}}</text><text class='calorie'>（含卡路里{{item.calorie_100g}}千卡/100g） </text></view> 
+    <view></view>
+    <view><text class='all_calorie'>             共计{{item.keshu}}千卡 </text></view>
+    <hr style="height:1px;border:none;border-top:1px dashed #0066CC;" />
+  </block>
+</view>
+<view hidden="{{src1state}}">
+  <view class='section2'>
+    <view class='text-intro'>
+      <view><text class='name'> {{food1}}\n</text></view> 
+      <view><text class='calorie'>含卡路里{{calorie1}}千卡/100g</text></view>
+      <view><text > </text></view> 
+      <picker mode = "selector"range = "{{keshu}}" bindchange="changekeshu1">*   {{string1}}</picker>
+    </view>
+    <view id='model' class='content'>
+      <image class="photo" mode="aspectFill" src="{{src1}}"></image>
+    </view>
+  </view>
+</view>
+<view hidden="{{src2state}}">
+  <view class='section2'>
+    
+      <view class='text-intro'>
+        <view><text class='name'> {{food2}}</text></view> 
+        <view><text class='calorie'>含卡路里{{calorie2}}千卡/100g</text></view>
+        <picker mode = "selector"range = "{{keshu}}" bindchange="changekeshu2">*   {{string2}}</picker>
+      </view>
+      <view id='model' class='content'>
+      <image class="photo" mode="aspectFill" src="{{src2}}"></image>
+    </view>
+  </view>
+</view>
+<view hidden="{{src3state}}">
+  <view class='section2'>
+    
+      <view class='text-intro'>
+        <view><text class='name'> {{food3}}</text></view> 
+        <view><text class='calorie'>含卡路里{{calorie3}}千卡/100g</text></view>
+        <picker mode = "selector"range = "{{keshu}}" bindchange="changekeshu3">*   {{string3}}</picker>
+      </view>
+      <view id='model' class='content'>
+      <image class="photo" mode="aspectFill" src="{{src3}}"></image>
+    </view>
+  </view>
+</view>
+<view hidden="{{src4state}}">
+  <view class='section2'>
+    
+      <view class='text-intro'>
+        <view><text class='name'> {{food4}}</text></view> 
+        <view><text class='calorie'>含卡路里{{calorie4}}千卡/100g</text></view>
+        <picker mode = "selector"range = "{{keshu}}" bindchange="changekeshu4">*   {{string4}}</picker>
+      </view>
+      <view id='model' class='content'>
+      <image class="photo" mode="aspectFill" src="{{src4}}"></image>
+    </view>
+  </view>
+</view>
+<view hidden="{{src5state}}">
+  <view class='section2'>
+    
+      <view class='text-intro'>
+        <view><text class='name'> {{food5}}</text></view> 
+        <view><text class='calorie'>含卡路里{{calorie5}}千卡/100g</text></view>
+        <picker mode = "selector"range = "{{keshu}}" bindchange="changekeshu5">*   {{string5}}</picker>
+      </view>
+      <view id='model' class='content'>
+      <image class="photo" mode="aspectFill" src="{{src5}}"></image>
+    </view>
+  </view>
+</view>
+<button hidden="{{buttom_button}}" bindtap="recordover">记录完毕{{allstring}}</button>

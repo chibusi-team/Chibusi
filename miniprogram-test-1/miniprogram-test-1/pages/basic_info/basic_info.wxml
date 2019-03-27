@@ -1,0 +1,57 @@
+<!--pages/basic_info/basic_info.wxml-->
+<form bindsubmit='formSubmit' >
+  <view class="container2">
+    <view class="section1">
+      <text class = "textview">
+      体重</text>
+      <input type="number" name = "weight" placeholder="-- kg"/>
+    </view>
+    <view class="section">
+      <text class = "textview">
+      身高</text>
+      <input type="number" name = "height" placeholder="-- cm"/>
+    </view>
+    <view class = "gap"></view>
+    <view class="section">
+      <text class = "textview">
+      性别</text>
+      <view class='list-msg1' bindtap='bindShowMsg1'>
+            <text>{{sex}}</text>
+      </view>
+      <view class="select_box" wx:if="{{select}}">
+          <view class="select_one" bindtap="mySelect2" data-name="男">男</view>
+          <view class="select_one" bindtap="mySelect2" data-name="女">女</view>
+      </view>
+    </view>
+    <view class = "gap"></view>
+    <view class="section">
+      <text class = "textview">年龄</text>
+      <input type="number" name = "age" placeholder="-- 几岁"/>
+    </view>
+    <view class = "gap"></view>
+    <view class="section">
+      <text class = "textview">运动</text>
+    <!--下拉框  -->
+        <view class='list-msg2' bindtap='bindShowMsg2'>
+            <text>{{exercise}}</text>
+        </view>
+    <!-- 下拉需要显示的列表 -->
+        <view class="select_box" wx:if="{{select}}">
+          <view class="select_one" bindtap="mySelect1" data-name="几乎不动">几乎不动</view>
+          <view class="select_one" bindtap="mySelect1" data-name="每周3次以内每次1小时以内">每周3次以内每次1小时以内</view>
+          <view class="select_one" bindtap="mySelect1" data-name="每周3次以上5次以下每次1小时以上">每周3次以上5次以下每次1小时以上</view>
+          <view class="select_one" bindtap="mySelect1" data-name="每周3次以上5次以下每次1小时以上">每周3次以上5次以下每次1小时以上</view>
+        </view>
+    </view>
+    <view class="section">
+      <text class = "textview">目标</text>
+      <input class = "goal_direction" type="number" name = "goal_direction" placeholder="-- 维持"/>
+      <input class = "goal_num" type="number" name = "goal_num" placeholder="-- kg"/>
+    </view>
+  <view class="btn-area">
+      <button class= "in_button" formType="submit">打造您的个人健康助手</button>
+  </view>
+  </view>
+</form>
+<view class = "container2"></view>
+<!-- <button class="in_button" bindtap="bindViewTap">打造你的个人健康助手</button> -->
